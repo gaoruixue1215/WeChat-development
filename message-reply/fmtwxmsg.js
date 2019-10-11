@@ -54,7 +54,7 @@ module.exports = function formatMsg (data) {
                     <ToUserName><![CDATA[${data.touser}]]></ToUserName>
                     <FromUserName><![CDATA[${data.fromuser}]]></FromUserName>
                     <MsgType><![CDATA[text]]></MsgType>
-                    <Content><![CDATA[该类行不被支持]]></Content>
+                    <Content><![CDATA[该类型不被支持]]></Content>
                     <CreateTime>${data.msgtime}</CreateTime>
                 </xml>
             `;
