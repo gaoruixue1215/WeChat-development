@@ -19,6 +19,12 @@ function userMsg(wxmsg, retmsg) {
             retmsg.msgtype = 'text';
             return formatMsg(retmsg);
 
+        } else if (wxmsg.Content == 'who' || wxmsg.Content == 'about'){
+
+            retmsg.msg = '我是开发者郜瑞雪。学号：2017012057';
+            retmsg.msgtype = 'text';
+            return formatMsg(retmsg);
+
         } else {
             retmsg.msg = wxmsg.Content;
             retmsg.msgtype = wxmsg.MsgType;
