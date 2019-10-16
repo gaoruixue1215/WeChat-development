@@ -54,7 +54,7 @@ module.exports = function formatMsg (data) {
                     <ToUserName><![CDATA[${data.touser}]]></ToUserName>
                     <FromUserName><![CDATA[${data.fromuser}]]></FromUserName>
                     <MsgType><![CDATA[text]]></MsgType>
-                    <Content><![CDATA[你好。该测试号支持某些关键词自动回复，以及文本、图片、语音信息的原样返回，暂不支持视频类型哦]]></Content>
+                    <Content><![CDATA[该类型不被支持]]></Content>
                     <CreateTime>${data.msgtime}</CreateTime>
                 </xml>
             `;
