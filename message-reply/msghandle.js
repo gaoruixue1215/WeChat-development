@@ -58,6 +58,7 @@ function eventMsg(wxmsg,retmsg){
             console.log(wxmsg.FromUserName,'取消关注');
             break;
         case 'CLICK':
+            console.log('关于我的key值',wxmsg.EventKey);
             retmsg.msg = wxmsg.EventKey;
             return formatMsg(retmsg);
         case 'VIEW':
